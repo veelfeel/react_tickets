@@ -1,0 +1,86 @@
+@import "./scss/vars";
+@import "./scss/fonts";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Myriad Pro", sans-serif;
+  color: $black;
+  background-color: #a7bace27;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.container {
+  max-width: $container-width;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  height: 136px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    border-radius: 50%;
+    box-shadow: 0px 4px 14px 0px rgba(133, 133, 133, 0.477);
+  }
+}
+
+.content {
+  display: flex;
+}
+
+.filter-list {
+  margin-right: 22px;
+  min-width: 250px;
+  height: 354px;
+  padding: 16px 0;
+  border-radius: $radius;
+  box-shadow: $box-shadow;
+
+  background-color: white;
+
+  & span {
+    padding: 0 16px;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.ticket-list {
+  width: 100%;
+}
